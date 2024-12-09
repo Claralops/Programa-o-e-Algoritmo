@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var menu, lanche, bebida, conta, sair,xt=0,xe=0,xs=0,b=0,c=0,g=0,f=0,t=0,cxt=0,cxe=0,cxs=0,cb=0,cc=0,cg=0,cf=0,ct=0;
+        do{
+            menu=parseInt(prompt("1-Lanches\n2-Bebidas\n3-Conta\n0-Sair\n"))
+            switch(menu)
+            {
+                case 1:
+                do
+                {
+                lanche=parseInt(prompt("1-X-tudo R$10,00\n2-X-egg R$9,00\n3-X-salada R$8,00\n4-Bauru R$5,00\n0-Voltar para ao Menu"))
+                switch(lanche)
+                {
+                    case 1:
+                    cxt++    
+                    xt=xt+10
+                    break;
+
+                    case 2:
+                    cxe++
+                    xe=xe+9
+                    break;
+
+                    case 3:
+                    cxs++
+                    xs=xs+8
+                    break;
+
+                    case 4:
+                    cb++
+                    b=b+5
+                    break;
+
+                    case 0:
+                    break;
+                }
+            }while( lanche!=0)
+            break;
+
+                case 2:
+                do{
+                bebida=parseInt(prompt("1-Coca-cola R$5,00\n2-Guaraná R$4,00\n3-Fanta R$4,00\n4-Tubaína R$3,00\n0-Voltar ao Menu"))
+                switch(bebida)
+                {
+                    case 1:
+                    cc++
+                    c=c+5
+                    break;
+
+                    case 2:
+                    g++
+                    g=g+4
+                    break;
+
+                    case 3:
+                    cf++
+                    f=f+4
+                    break;
+
+                    case 4:
+                    ct++
+                    t=t+3
+                    break;
+
+                    case 0:
+                    break;
+                }
+            }while( bebida!=0)
+            break;
+                case 3:
+                conta=xt+xe+xs+b+c+g+f+t
+                alert(conta)
+
+                case 0:
+                break;
+            }
+            
+        }while(menu!=0)
+    </script>
+</body>
+</html>

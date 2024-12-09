@@ -1,0 +1,22 @@
+<hml lang="pt-br">
+    <script>
+        function calcularPesoIdeial(h,genero)
+        {
+            let pesoIdeal
+            if(genero === "feminino")
+        {
+            pesoIdeal=(62.1*h)-44.7;
+
+        }
+            if(genero === "masculino")
+            {
+                pesoIdeal=(72.7*h)-58;
+            }
+            return pesoIdeal;
+        }
+        let h,genero;
+        h=parseFloat(prompt("Digite a sua altura:"))/100
+        genero=prompt("Digite se é do gênero masculino ou feminino:")
+        alert("O seu peso ideal é: "+calcularPesoIdeial(h,genero).toFixed(2))
+    </script>
+</hml>

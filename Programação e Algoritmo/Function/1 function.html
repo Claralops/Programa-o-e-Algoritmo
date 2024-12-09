@@ -1,0 +1,17 @@
+<html>
+    <script>
+        function calcularFatorial(numero)
+        {
+            let n=1
+            for(let i=numero;i>1;i--)
+        {
+            n*=i
+        }
+        return n;
+        }
+
+        let numero;
+        numero=parseInt(prompt("Digite um número que deseje calcular a fatorial:"))
+        alert("Resultado da Fatorial: "+calcularFatorial(numero))
+    </script>
+</html>

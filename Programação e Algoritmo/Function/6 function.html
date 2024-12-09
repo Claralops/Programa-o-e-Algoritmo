@@ -1,0 +1,34 @@
+<html lang="pt-br">
+    <script>
+        function verifica(x,y)
+        {
+            let quadrante
+            if (x>0,y>0)
+        {
+            quadrante = 1
+            return quadrante;
+        }
+            else if (x>0,y<0)
+        {
+            quadrante = 4
+            return quadrante;
+        }
+            else if (x<0,y,0)
+        {
+            quadrante = 3
+            return quadrante;
+        }
+            else if (x<0,y>0)
+        {
+            quadrante = 2
+            return quadrante;
+        }
+        }
+
+        let x,y;
+        x=parseInt(prompt("Digite a coordenada X:"));
+        y=parseInt(prompt("Digite a coordenada Y:"));
+
+        alert("A sua coordenada se encontra no quadrante: "+verifica(x,y));
+    </script>
+</html>

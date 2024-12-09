@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var salario,qtaulas,vlhora,pinss;
+        qtaulas=parseFloat(prompt("Digite a quantidade de aulas."));
+        vlhora=parseFloat(prompt("Digite o valor da hora."));
+        pinss=parseFloat(prompt("Digite a porcentagem do INSS."));
+        salario=qtaulas*vlhora*(1-pinss/100);
+        alert("O valor do salário = " + salario);
+    </script>
+</body>
+</html>

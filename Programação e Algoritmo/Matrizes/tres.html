@@ -1,0 +1,19 @@
+<html>
+    <script>
+        let a=[]
+        let soma=0
+
+        for (x=0;x<10;x++)
+        {
+            a[x]=parseInt(prompt((x+1)+" Digite os números:"))
+        }
+        for(let x=0;x<10;x++)
+        {
+            if(a[x]%2!==0)
+            {
+                soma+=a[x]
+            }
+        }
+            document.write(soma+"<br>")
+    </script>
+</html>

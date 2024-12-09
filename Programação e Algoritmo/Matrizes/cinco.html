@@ -1,0 +1,18 @@
+<html>
+    <script>
+        let a=[]
+        let b=[]
+        let c=[]
+        for (let x=0;x<4;x++)
+        {
+            a[x]=parseInt(prompt((x+1)+" Digite os números A:"));
+            b[x]=parseInt(prompt((x+1)+" Digite os números B:"));
+        }
+        for (let x=0;x<4;x++)
+        {
+            c[x]=a[x]
+            c[x+4]=b[x]
+        }
+        document.write(c)
+    </script>
+</html>

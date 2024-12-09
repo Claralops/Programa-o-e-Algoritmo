@@ -1,0 +1,41 @@
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+</head>
+    <script>
+        function verificar(a,b,c)
+        {
+            return a<b+c && b<a+c && c<a+b
+        }
+        function tipo(a,b,c)
+        {
+            if(a == b && b == c)
+            {
+                return "equilatero"
+            }
+            if(a==b && a==c && b==c)
+            {
+                return "isociles"
+            }
+            else
+            {
+                return "escaleno"
+            }
+        }
+        let a,b,c;
+        a=parseInt(prompt("Digite o valor A do triângulo:"))
+        b=parseInt(prompt("Digite o valor B do triângulo:"))
+        c=parseInt(prompt("Digite o valor C do triângulo:"))
+
+
+        if(verificar(a,b,c))
+        {
+        alert("A classificação do triângulo e: " + tipo(a,b,c))
+        }
+        else
+        {
+        alert("Os lados fornecidos não são de uma caracterizacao de um triângulo.")
+        }
+    </script>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <script>
+        let contador=1,matriz=[],diag1=[], diag2=[];
+        for(let x=0;x<5;x++)
+    {
+        matriz[x]=[]
+        for(let i=0;i<5;i++)
+    {
+        matriz[x][i]=contador++;
+    }
+    }
+    for(let i=0;i<5;i++)
+    {
+        diag1[i]=(matriz[i][i]);
+        diag2[i]=(matriz[i][4-i]);
+    }
+    document.write("Soma da primeira diagonal:"+diag1+"<br> Soma da segunda diagonal:"+diag2)
+        
+    </script>
+</html>

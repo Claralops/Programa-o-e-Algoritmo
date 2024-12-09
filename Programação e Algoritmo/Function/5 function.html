@@ -1,0 +1,110 @@
+<html lang="pt-br">
+    <script>
+        function soma(a,b)
+        {
+            r=a+b
+            return r;
+        }
+        function subtracao(a,b)
+        {
+            r=a-b
+            return r;
+        }
+        function multi(a,b)
+        {
+            r=a*b
+            return r;
+        }
+        function divisao(a,b)
+        {
+            r=a/b
+            return r;
+        }
+        function resto(a,b)
+        {
+            r=a % b
+            return r;
+        }
+        function dobro(a)
+        {
+            r=a*2
+            return r;
+        }
+        function quadrado(a,b)
+        {
+            r=Math.pow(a,2)
+            return r;
+        }
+        function cubo(a)
+        {
+            r=Math.pow(a,3)
+            return r;
+        }
+        function raizQuadrada(a)
+        {
+            r=Math.sqrt(a)
+            return r;
+        }
+
+        let opcao;
+       
+        do{
+            opcao=parseInt(prompt("Digite o número correspondente ao cálculo que desejar: \n1-Soma\n2-Subtração\n3-Multiplicação\n4-Divisão\n5-Resto de divisão\n6-Dobro\n7-Quadrado\n8-Cubo\n9-Raíz Quadrada\n0-Sair"));
+            if (opcao === 0)
+            break;
+            let a,b;
+            switch(opcao)
+            {
+                case 1:
+                a=parseInt(prompt("Digite o primeiro valor:"));
+                b=parseInt(prompt("Digite o segundo valor:"));
+                alert("Resultado: "+soma(a,b))
+                break;
+                
+                case 2:
+                a=parseInt(prompt("Digite o primeiro valor: "));
+                b=parseInt(prompt("Digite o segundo valor:"));
+                alert("Resultado: "+subtracao(a,b))
+                break;
+
+                case 3:
+                a=parseInt(prompt("Digite o primeiro valor: "));
+                b=parseInt(prompt("Digite o segundo valor:"));
+                alert("Resultado: "+multi(a,b))
+                break;
+
+                case 4:
+                a=parseInt(prompt("Digite o primeiro valor: "));
+                b=parseInt(prompt("Digite o segundo valor:"));
+                alert("Resultado: "+divisao(a,b))
+                break;
+
+                case 5:
+                a=parseInt(prompt("Digite o primeiro valor: "));
+                b=parseInt(prompt("Digite do divisor valor:"));
+                alert("Resultado: "+resto(a,b))
+                break;
+
+                case 6:
+                a=parseInt(prompt("Digite um valor: "));
+                alert("Resultado: "+dobro(a))
+                break;
+
+                case 7:
+                a=parseInt(prompt("Digite um valor:"));
+                alert("Resultado: "+quadrado(a))
+                break;
+
+                case 8:
+                a=parseInt(prompt("Digite um valor: "));
+                alert("Resultado: "+cubo(a))
+                break;
+
+                case 9:
+                a=parseInt(prompt("Digite um valor:"));
+                alert("Resultado: "+raizQuadrada(a))
+
+            }
+        }while (true);
+    </script>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <script>
+        var prod=[], pesq;
+        for(x=0;x<5;x++)
+    {
+        nome=prompt((x+1)+"Digite o nome do produto:");
+        preco=parseFloat(prompt((x+1)+"Digite o preco do produto:"));
+        prod[x]=[nome,preco]
+    }
+    pesq=parseFloat(prompt((x+1)+"Digite o preço que deseja:"));
+
+    for(x=0;x<5;x++)
+    {
+        if(prod[x][1]<=pesq)
+    {
+        document.write(prod[x][0]+":"+prod[x][1]+"<br>")
+    }
+    }
+    </script>
+</html>

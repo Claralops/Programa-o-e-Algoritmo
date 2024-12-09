@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x,matrixA=[],matrixB=[], matrixC=[];
+        for(x=0;x<20;x++)
+        {
+            matrixA[x]=prompt((x+1) + "Digite 20 números:")
+        }
+        for(x=0;x<20;x++)
+        {
+            matrixB[x]=prompt((x+1) + "Digite 20 números:")
+        }
+        for(x=0;x<20;x++)
+        {
+            matrixC[x]=matrixA[x] - matrixB[x];
+        }
+        for(x=0;x<20;x++)
+        {
+            document.write((x+1)+"Números:"+matrixC[x]+"<br>");
+        }
+    </script>
+</body>
+</html>

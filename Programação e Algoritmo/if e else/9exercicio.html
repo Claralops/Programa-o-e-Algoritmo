@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sair="n",x,par=0,impar=0,posit=0,negat=0;
+        while(sair!="s")
+        {
+            x=parseFloat(prompt("Digite os números:"));
+            sair=prompt("Deseja sair do programa? <s/n>");
+            if(!isNaN(x))
+            { 
+            if(x%2==0)
+                {
+                    par++
+                }
+            else
+                {
+                    impar++
+                }
+            if(x>0)
+                {
+                    posit++
+                }
+            else
+                {
+                    negat++
+                }
+            }
+        }
+        document.write("<br> Par " +par+ "<br> Impar " +impar+ "<br> Positivo " +posit+ "<br> Negativo " +negat);
+    </script>
+</body>
+</html>
